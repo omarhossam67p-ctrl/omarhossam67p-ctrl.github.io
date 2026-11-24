@@ -140,6 +140,51 @@ body{background:radial-gradient(ellipse at 82% 8%,rgba(116,76,255,.20),transpare
 @media(max-width:700px){.file-card{padding:24px 20px}.oh-page .oh-hero{padding:42px 0}.oh-page .oh-hero-copy h2{font-size:58px}.oh-contact{align-items:flex-start;flex-direction:column;padding:22px}.oh-page .oh-sechead{padding-top:46px}}
 @media(prefers-reduced-motion:no-preference){.oh-page .oh-art,.oh-page .oh-lead{transition:transform .25s,border-color .25s,box-shadow .25s}.oh-page .oh-art:hover,.oh-page .oh-lead:hover{transform:translateY(-4px);border-color:rgba(182,255,92,.65);box-shadow:0 18px 50px rgba(0,0,0,.28)}}
 
+
+/* PORTFOLIO REFINEMENT */
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+.oh-page .oh-nav{position:relative;gap:18px;flex-wrap:wrap}
+.oh-nav-links{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.oh-nav-links a{border:0!important;padding:6px 0!important;color:#d8d4e5!important;background:transparent!important}
+.oh-nav-links a:hover{color:#b6ff5c!important}
+.oh-page .oh-hero-copy>p{max-width:440px}
+.oh-page .oh-hero-copy h2{max-width:680px}
+.oh-page .oh-position{align-items:center}
+.oh-capabilities{padding:30px 0 8px;border-bottom:1px solid var(--ds-hairline)}
+.oh-capabilities-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:20px}
+.oh-capabilities-head h2{font-size:clamp(24px,3vw,36px);line-height:1.1;letter-spacing:-.05em;margin:8px 0 0}
+.oh-capability-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.oh-capability{min-height:118px;padding:18px;border:1px solid var(--ds-hairline);border-radius:14px;background:rgba(255,255,255,.025)}
+.oh-capability b{display:block;color:#b6ff5c;font-size:11px;letter-spacing:.12em;margin-bottom:14px}
+.oh-capability span{font-size:14px;line-height:1.4}
+.oh-process{display:grid;grid-template-columns:1fr 1.6fr;gap:32px;padding:48px 0;border-bottom:1px solid var(--ds-hairline)}
+.oh-process h2{font-size:clamp(28px,4vw,46px);line-height:1.05;letter-spacing:-.06em;margin:12px 0}
+.oh-process-intro{color:#aaa6bc;font-size:14px;line-height:1.7;max-width:340px}
+.oh-process-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.oh-process-step{padding:18px;border:1px solid var(--ds-hairline);border-radius:14px}
+.oh-process-step small{display:block;color:#b6ff5c;font-size:10px;letter-spacing:.15em;margin-bottom:12px}
+.oh-process-step b{display:block;font-size:15px;margin-bottom:6px}
+.oh-process-step p{margin:0;color:#aaa6bc;font-size:12px;line-height:1.6}
+.oh-page .oh-contact{scroll-margin-top:20px}
+.oh-contact-links a{transition:transform .2s,box-shadow .2s}
+.oh-contact-links a:hover{transform:translateY(-2px);box-shadow:0 8px 26px rgba(182,255,92,.16)}
+.oh-page .oh-tools li{display:flex;justify-content:space-between;gap:14px}
+.oh-page .oh-tools li:after{content:"↗";color:#b6ff5c}
+.oh-footer{display:flex;justify-content:space-between;gap:18px;align-items:center;padding:22px 0 4px;color:#777489;font-size:10px;letter-spacing:.06em}
+.oh-footer a{color:#b6ff5c}
+@media(max-width:700px){
+ .oh-nav-links{gap:12px}
+ .oh-nav-links a{font-size:10px}
+ .oh-capabilities-head{display:block}
+ .oh-capability-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .oh-capability{min-height:105px;padding:14px}
+ .oh-process{grid-template-columns:1fr;gap:18px;padding:34px 0}
+ .oh-process-list{gap:8px}
+ .oh-process-step{padding:14px}
+ .oh-footer{align-items:flex-start;flex-direction:column}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.oh-contact-links a{transition:none}}
+
 </style></head>
 <body>
 <main class="file-card" data-width="fluid" dir="ltr" lang="en">
@@ -149,7 +194,12 @@ body{background:radial-gradient(ellipse at 82% 8%,rgba(116,76,255,.20),transpare
 </header>
 <div class="oh-nav">
 <span>GRAPHIC DESIGNER — PORTFOLIO</span>
-<a class="file-link" href="https://www.behance.net/omarhosaam67" rel="noopener noreferrer" target="_blank">Behance</a>
+<div class="oh-nav-links">
+<a href="#oh-work-h">Work</a>
+<a href="#oh-about-h">About</a>
+<a href="#oh-contact">Contact</a>
+<a class="file-link" href="https://www.behance.net/omarhosaam67" rel="noopener noreferrer" target="_blank">Behance ↗</a>
+</div>
 </div>
 <section class="oh-hero">
 <div class="oh-hero-copy">
@@ -170,6 +220,18 @@ body{background:radial-gradient(ellipse at 82% 8%,rgba(116,76,255,.20),transpare
 <section class="oh-position">
 <span>VISUAL DESIGN<br/>WITH TWO SIDES</span>
 <p>Imaginative compositions that pull you in.<br/><strong>Practical thinking that carries through.</strong></p>
+</section>
+<section class="oh-capabilities" aria-label="Creative disciplines">
+<div class="oh-capabilities-head">
+<div><span class="oh-eyebrow">CREATIVE DISCIPLINES</span><h2>Ideas, shaped into visuals.</h2></div>
+<span class="oh-eyebrow">CONCEPT / DESIGN / DELIVERY</span>
+</div>
+<div class="oh-capability-grid">
+<div class="oh-capability"><b>01 / 3D</b><span>3D visuals &amp; creative exploration</span></div>
+<div class="oh-capability"><b>02 / GRAPHIC</b><span>Visual identity &amp; graphic design</span></div>
+<div class="oh-capability"><b>03 / CAMPAIGNS</b><span>Product advertising &amp; social content</span></div>
+<div class="oh-capability"><b>04 / PRINT</b><span>Editorial layouts &amp; print production</span></div>
+</div>
 </section>
 <section aria-labelledby="oh-work-h" class="oh-work">
 <div class="oh-sechead">
@@ -311,7 +373,20 @@ body{background:radial-gradient(ellipse at 82% 8%,rgba(116,76,255,.20),transpare
 <a class="file-link" href="https://www.behance.net/omarhosaam67" rel="noopener noreferrer" target="_blank">Explore my work on Behance</a>
 </section>
 
-<section class="oh-contact" aria-label="Contact and next steps">
+<section class="oh-process" aria-label="Creative process">
+<div>
+<span class="oh-eyebrow">HOW I APPROACH A PROJECT</span>
+<h2>Good design is more than a good-looking image.</h2>
+<p class="oh-process-intro">A clear process keeps the idea strong from the first reference to the final presentation.</p>
+</div>
+<div class="oh-process-list">
+<div class="oh-process-step"><small>01 / DISCOVER</small><b>Understand the brief</b><p>Clarify the goal, audience, message and visual direction.</p></div>
+<div class="oh-process-step"><small>02 / EXPLORE</small><b>Build the concept</b><p>Develop references, composition and a focused creative idea.</p></div>
+<div class="oh-process-step"><small>03 / CREATE</small><b>Design with detail</b><p>Refine typography, imagery, color and visual consistency.</p></div>
+<div class="oh-process-step"><small>04 / DELIVER</small><b>Prepare the outcome</b><p>Present polished visuals and production-aware final artwork.</p></div>
+</div>
+</section>
+<section id="oh-contact" class="oh-contact" aria-label="Contact and next steps">
   <div>
     <span class="oh-eyebrow">HAVE A PROJECT IN MIND?</span>
     <h2>Let's make it<br/>stand out.</h2>
@@ -323,6 +398,7 @@ body{background:radial-gradient(ellipse at 82% 8%,rgba(116,76,255,.20),transpare
   </div>
 </section>
 <span class="file-closing">Design portfolio of Omar Hossam. Brand names identify the subjects of the work, not a claim of endorsement or a paid relationship.</span>
+<footer class="oh-footer"><span>© 2026 OMAR HOSSAM · CREATIVE PORTFOLIO</span><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">BACK TO TOP ↑</a></footer>
 </div>
 </main>
 <div aria-label="Artwork viewer" aria-modal="true" class="oh-viewer" hidden role="dialog">
