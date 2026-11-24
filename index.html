@@ -87,7 +87,60 @@
 .oh-page .oh-filters{gap:6px}
 .oh-page .oh-filters button{font-size:11px;padding:7px 12px}
 }
-@media(prefers-reduced-motion:reduce){.oh-page .oh-art img,.oh-page .oh-lead img{transition:none}}</style></head>
+@media(prefers-reduced-motion:reduce){.oh-page .oh-art img,.oh-page .oh-lead img{transition:none}}
+/* CREATIVE ART DIRECTION — 2026 */
+html{background:#090a12}
+body{background:radial-gradient(ellipse at 82% 8%,rgba(116,76,255,.20),transparent 32%),radial-gradient(ellipse at 8% 38%,rgba(0,220,190,.10),transparent 30%),#090a12;color:#f3f0ff;--ds-ink:#f3f0ff;--ds-ink-2:#aaa6bc;--ds-hairline:rgba(255,255,255,.13);--ds-raised:#171827;--ds-page:#10111d;--ds-teal:#b6ff5c;--ds-font-display:Arial,Helvetica,sans-serif}
+.file-card{max-width:1240px;padding:38px 42px}
+.file-title{font:800 20px/1 Arial,sans-serif;letter-spacing:.04em;color:#b6ff5c;text-transform:uppercase}
+.oh-page .oh-nav{border-color:var(--ds-hairline);margin-top:0;padding:18px 0 24px;color:#c7c3d8}
+.oh-page .oh-nav a,.oh-page .file-link{color:#b6ff5c;text-decoration-thickness:1px;text-underline-offset:5px}
+.oh-page .oh-nav a{border:1px solid rgba(182,255,92,.5);border-radius:999px;padding:9px 16px}
+.oh-page .oh-hero{grid-template-columns:1fr 1.05fr;gap:54px;padding:76px 0 64px}
+.oh-page .oh-eyebrow{color:#b6ff5c;letter-spacing:.18em}
+.oh-page .oh-hero-copy h2{font-weight:800;letter-spacing:-.085em;font-size:clamp(54px,7vw,104px);line-height:.91;margin:26px 0}
+.oh-page .oh-hero-copy h2 em{color:#b6ff5c;font-style:normal}
+.oh-page .oh-hero-copy>p{font-size:16px;max-width:380px;color:#c1bdd1}
+.oh-page .oh-sign{border-left:2px solid #b6ff5c;padding-left:14px}
+.oh-page .oh-sign span:first-child{letter-spacing:.16em}
+.oh-page .oh-lead{background:linear-gradient(135deg,#292348,#111522);border:1px solid rgba(182,255,92,.3);border-radius:22px;box-shadow:0 24px 80px rgba(0,0,0,.35)}
+.oh-page .oh-lead img{max-height:540px;object-fit:contain}
+.oh-page .oh-lead>span{background:#151625;border:0;border-top:1px solid var(--ds-hairline);color:#f3f0ff}
+.oh-page .oh-position{border-color:var(--ds-hairline);margin:0 0 20px}
+.oh-page .oh-position p{font-size:clamp(18px,2.1vw,25px)}
+.oh-page .oh-position strong{color:#b6ff5c}
+.oh-page .oh-sechead{padding-top:66px}
+.oh-page .oh-secnum{color:transparent;-webkit-text-stroke:1px rgba(182,255,92,.65)}
+.oh-page .oh-sechead-text h2{font-weight:750;letter-spacing:-.06em}
+.oh-page .oh-filters button{background:#141522;border-color:var(--ds-hairline);color:#f3f0ff}
+.oh-page .oh-filters button span{color:#aaa6bc}
+.oh-page .oh-filters button[aria-pressed=true]{background:#b6ff5c;color:#11131a;border-color:#b6ff5c}
+.oh-page .oh-filters button[aria-pressed=true] span{color:#11131a}
+.oh-page .oh-project{padding-bottom:10px}
+.oh-page .oh-art{background:linear-gradient(145deg,#1d1e30,#12131f);border:1px solid rgba(255,255,255,.10);border-radius:18px;padding:16px}
+.oh-page .oh-art img{border-radius:9px}
+.oh-page .oh-art>span{background:#b6ff5c;color:#11131a}
+.oh-page .oh-meta{color:#b6ff5c;letter-spacing:.05em}
+.oh-page h3{font-weight:700;letter-spacing:-.045em}
+.oh-page .oh-project p,.oh-page .oh-about-grid>p,.oh-page .oh-about-grid div>p{color:#aaa6bc}
+.oh-page .oh-project>a{color:#b6ff5c}
+.oh-page .oh-about{border-color:var(--ds-hairline)}
+.oh-page .oh-tools li{border-color:var(--ds-hairline)}
+.oh-page .oh-tools li:first-child{border-color:var(--ds-hairline)}
+.oh-page .oh-about-grid h3{color:#b6ff5c;text-transform:uppercase;letter-spacing:.12em}
+.oh-page button:focus-visible,.oh-viewer button:focus-visible{outline-color:#b6ff5c}
+.oh-viewer{background:rgba(5,6,13,.96)}
+.oh-contact{display:flex;justify-content:space-between;align-items:center;gap:24px;margin:42px 0 12px;padding:30px;border:1px solid rgba(182,255,92,.35);border-radius:20px;background:linear-gradient(120deg,rgba(182,255,92,.10),rgba(123,85,255,.12))}
+.oh-contact h2{font-size:clamp(26px,4vw,44px);line-height:1.05;margin:8px 0}
+.oh-contact p{margin:0;color:#aaa6bc}
+.oh-contact-links{display:flex;flex-wrap:wrap;gap:10px}
+.oh-contact-links a{display:inline-block;padding:12px 17px;border-radius:999px;background:#b6ff5c;color:#11131a!important;text-decoration:none;font-weight:700;font-size:12px}
+.oh-contact-links a.secondary{background:transparent;color:#f3f0ff!important;border:1px solid rgba(255,255,255,.25)}
+.file-closing{color:#777489}
+@media(max-width:700px){.file-card{padding:24px 20px}.oh-page .oh-hero{padding:42px 0}.oh-page .oh-hero-copy h2{font-size:58px}.oh-contact{align-items:flex-start;flex-direction:column;padding:22px}.oh-page .oh-sechead{padding-top:46px}}
+@media(prefers-reduced-motion:no-preference){.oh-page .oh-art,.oh-page .oh-lead{transition:transform .25s,border-color .25s,box-shadow .25s}.oh-page .oh-art:hover,.oh-page .oh-lead:hover{transform:translateY(-4px);border-color:rgba(182,255,92,.65);box-shadow:0 18px 50px rgba(0,0,0,.28)}}
+
+</style></head>
 <body>
 <main class="file-card" data-width="fluid" dir="ltr" lang="en">
 <div class="oh-page">
@@ -256,6 +309,18 @@
 </div>
 </div>
 <a class="file-link" href="https://www.behance.net/omarhosaam67" rel="noopener noreferrer" target="_blank">Explore my work on Behance</a>
+</section>
+
+<section class="oh-contact" aria-label="Contact and next steps">
+  <div>
+    <span class="oh-eyebrow">HAVE A PROJECT IN MIND?</span>
+    <h2>Let's make it<br/>stand out.</h2>
+    <p>For collaborations, freelance projects and opportunities.</p>
+  </div>
+  <div class="oh-contact-links">
+    <a href="https://www.behance.net/omarhosaam67" target="_blank" rel="noopener noreferrer">Explore Behance ↗</a>
+    <a class="secondary" href="https://github.com/omarhossam67p-ctrl" target="_blank" rel="noopener noreferrer">GitHub Profile ↗</a>
+  </div>
 </section>
 <span class="file-closing">Design portfolio of Omar Hossam. Brand names identify the subjects of the work, not a claim of endorsement or a paid relationship.</span>
 </div>
