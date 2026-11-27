@@ -509,7 +509,7 @@ document.addEventListener('keydown',e=>{if(viewer.hidden)return;if(e.key==='Esca
 let tx=null;
 viewer.addEventListener('touchstart',e=>{tx=e.touches[0].clientX},{passive:true});
 viewer.addEventListener('touchend',e=>{if(tx===null)return;const d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>40)step(d<0?1:-1);tx=null;},{passive:true});
-fetch('1-index.html').then(r=>r.text()).then(t=>{
+fetch('2-index.html').then(r=>r.text()).then(t=>{
   const m=t.match(/const projects = (\[[\s\S]*?\]);/);
   if(!m)throw new Error('Artwork unavailable');
   const p=JSON.parse(m[1]);
